@@ -1,0 +1,74 @@
+﻿
+@model  Calibration.Models.CustomerList
+
+@using (Html.BeginForm(null, null, FormMethod.Post, new { @class = "", @id = "frmCandidate" }))
+{
+    <div class="form-group col-xs-10 col-sm-4 col-md-4 col-lg-4">
+        <label for="DieNumber">Customer Name :</label>
+        @Html.TextBoxFor(a => a.Customer_Name, new { @class = "form-control", placeholder = "Customer Name", title = "Customer_Name", @id = "Customer_Name" })
+    </div>
+    <div class="form-group col-xs-10 col-sm-4 col-md-4 col-lg-4">
+        <label for="customerName">Address :</label>
+        @Html.TextBoxFor(a => a.Address, new { @class = "form-control", placeholder = "Address", title = "Address", @id = "Address" })
+    </div>
+    <div class="clearfix"></div>
+    <div class="form-group col-xs-10 col-sm-4 col-md-4 col-lg-4">
+        <label for="PartName">City</label>
+        @Html.TextBoxFor(a => a.City, new { @class = "form-control", placeholder = "City", title = "City", @id = "City" })
+    </div>
+    <div class="form-group col-xs-10 col-sm-4 col-md-4 col-lg-4">
+        <label for="PartNumber">Pincode</label>
+        @Html.TextBoxFor(a => a.Pincode, new { @class = "form-control", placeholder = "Pincode", title = "Pincode", @id = "Pincode" })
+    </div>
+    <div class="clearfix"></div>
+    <div class="form-group col-xs-10 col-sm-4 col-md-4 col-lg-4">
+        <label for="EnquiryDate">Salutation </label>
+        @Html.TextBoxFor(a => a.Salutation, new { @class = "form-control", placeholder = "Salutation", title = "Salutation", @id = "Salutation" })
+    </div>
+    <div class="form-group col-xs-10 col-sm-4 col-md-4 col-lg-4">
+        <label for="DrawingNumber">Contact_Person</label>
+        @Html.TextBoxFor(a => a.Contact_Person, new { @class = "form-control", placeholder = "Contact_Person Name", title = "Contact_Person", @id = "Contact_Person" })
+    </div>
+    <div class="clearfix"></div>
+    <div class="form-group col-xs-10 col-sm-4 col-md-4 col-lg-4">
+        <label for="Quantity">Mobile No</label>
+        @Html.TextBoxFor(a => a.Mobile_No, new { @class = "form-control", placeholder = "Mobile_No", title = "Mobile_No", @id = "Mobile_No" })
+    </div>
+    <div class="form-group col-xs-10 col-sm-4 col-md-4 col-lg-4">
+        <label for="Quantity">Telephone No</label>
+        @Html.TextBoxFor(a => a.Telephone_No, new { @class = "form-control", placeholder = "Telephone_No", title = "Telephone_No", @id = "Telephone_No" })
+    </div>
+    <div class="clearfix"></div>
+    <div class="form-group col-xs-10 col-sm-4 col-md-4 col-lg-4">
+        <label for="HSNCode">Fax</label>
+        @Html.TextBoxFor(a => a.Fax, new { @class = "form-control", placeholder = "Fax", title = "Fax", @id = "Fax" })
+    </div>
+    <div class="form-group col-xs-10 col-sm-4 col-md-4 col-lg-4">
+        <label for="Comment">Email ID</label>
+        @Html.TextBoxFor(a => a.Email_ID, new { @class = "form-control", placeholder = "Email_ID", title = "Email_ID", @id = "Email_ID" })
+    </div>
+    <div class="clearfix"></div>
+    <div class="form-group col-xs-10 col-sm-4 col-md-4 col-lg-4">
+        <label for="HSNCode">Remarks</label>
+        @Html.TextBoxFor(a => a.Remarks, new { @class = "form-control", placeholder = "Remarks", title = "Remarks", @id = "Remarks" })
+    </div>
+    <div class="form-group col-xs-10 col-sm-4 col-md-4 col-lg-4">
+        <label for="Comment">Vendor Code</label>
+        @Html.TextBoxFor(a => a.Vendor_Code, new { @class = "form-control", placeholder = "Vendor_Code", title = "Vendor_Code", @id = "Vendor_Code" })
+    </div>
+    <div class="clearfix"></div>
+    <div class="form-group col-xs-10 col-sm-4 col-md-4 col-lg-4">
+        <label for="HSNCode">GST_Number</label>
+        @Html.TextBoxFor(a => a.GST_Number, new { @class = "form-control", placeholder = "GST_Number", title = "GST_Number", @id = "GST_Number" })
+    </div>
+   
+    <div class="clearfix"></div>
+
+    <br /><br />
+
+    <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+    </div>
+
+}
